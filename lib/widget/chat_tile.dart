@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/message_page.dart';
-import 'package:flutter_app/theme.dart';
+import 'package:bwa_chatty/pages/message_page.dart';
+import 'package:bwa_chatty/theme.dart';
 
 class ChatTile extends StatelessWidget {
   final String imageUrl;

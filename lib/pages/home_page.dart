@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/theme.dart';
-import 'package:flutter_app/widget/chat_tile.dart';
+import 'package:bwa_chatty/theme.dart';
+import 'package:bwa_chatty/widget/chat_tile.dart';
 
 class HomePage extends StatelessWidget {
   @override

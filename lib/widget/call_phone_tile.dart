@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/theme.dart';
+import 'package:bwa_chatty/theme.dart';
 
 class CallPhoneTile extends StatelessWidget {
   final String imageUrl;

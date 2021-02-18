@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:bwa_chatty/theme.dart';
 
-class MessageChatTile extends StatelessWidget {
+class MessageChatFriendTile extends StatelessWidget {
   final String imageUrl;
 
   final String text;
   final String time;
 
-  const MessageChatTile({
+  const MessageChatFriendTile({
     Key key,
     this.imageUrl,
     this.text,
@@ -20,25 +20,14 @@ class MessageChatTile extends StatelessWidget {
       padding: EdgeInsets.only(top: 22),
       child: Row(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 30),
-            child: Image.asset(
-              imageUrl,
-              height: 45,
-              width: 45,
-            ),
-          ),
-          SizedBox(
-            width: 12,
-          ),
+          Spacer(),
           Container(
-            decoration: new BoxDecoration(
-                color: Colors.blueGrey[50],
-                borderRadius: new BorderRadius.only(
-                  topLeft: const Radius.circular(20),
-                  topRight: const Radius.circular(20),
-                  bottomRight: const Radius.circular(20),
-                )),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(20),
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20))),
             child: Padding(
               padding: const EdgeInsets.all(12),
               child: Column(
@@ -50,10 +39,20 @@ class MessageChatTile extends StatelessWidget {
                   SizedBox(
                     height: 8,
                   ),
-                  Text(time,
-                      style: subtitleTextStyle.copyWith(color: blackColor)),
+                  Text(time, style: subtitleTextStyle),
                 ],
               ),
+            ),
+          ),
+          SizedBox(
+            width: 12,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 54),
+            child: Image.asset(
+              imageUrl,
+              height: 45,
+              width: 45,
             ),
           ),
         ],
